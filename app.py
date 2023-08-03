@@ -68,10 +68,9 @@ def get_inpatient_info(df):
     pass
 
 
-
 @app.route('/patients', methods=['GET', 'POST'])
 def patients():
-    
+
     # Connect to the SQLite database
     engine = create_engine('sqlite:///database.db')
 
@@ -94,6 +93,27 @@ def patients():
         common_diagnosis=common_diagnosis
     )
  
+@app.route('/query', methods=['GET', 'POST'])
+def query():
+    # Connect to the SQLite database
+    engine = create_engine('sqlite:///database.db')
+
+    # Open and execute the SQL query 
+    with open('query.sql') as f:
+        sql_query = f.read()
+
+    df = pd.read_sql_query(sql_query, engine)
+
+    print(df)
+
+    # Convert the DataFrame to HTML
+    table = df.to_html()
+
+    return render_template(
+        template_name_or_list='query.html', 
+        table=table
+    )
+
 
 if __name__ == "__main__":
     db.setup()

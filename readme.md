@@ -1,11 +1,18 @@
-# Setup Instructions
+# General Instructions
 
-Once you have cloned the repo setup a virtual environment and install the dependencies within `requirements.txt`
+- Clone the repository
+- Complete the *three* exercises outlined in the 'Exercises' section below
+- Push your code to a new repository under your Github account - make sure to set the repository to Private
+- When pushing to your own repository please do not include any virtual environment folders or files (feel free to use a .gitignore for this)
+
+# Enivronment Setup Instructions
+
+You can use the following instructions to create a virtual environment and install the required dependencies. However you may prefer to use your own environment manager (for example condas). The list of dependencies are specified in the `requirements.txt` file.
 
 ## Windows
 ```console
 python3 -m venv venv
-myenv\Scripts\activate
+venv\Scripts\activate
 pip install requirements.txt
 ```
 
@@ -28,10 +35,11 @@ If you have problems running the app using the above command you can also try th
 python app.py
 ```
 
+The app should be running at localhost:5000/patients
 
-# Questions
+# Exercises
 
-## SQL Task
+## 1. SQL Task
 
 Open `query.sql` and write a SQL script that brings in the following information about each patients' spell. Make sure to only include patients that are not deceased:
 
@@ -42,6 +50,10 @@ Open `query.sql` and write a SQL script that brings in the following information
 - Discharge Date
 - Diagnosis
 - Diagnosis Code
+
+You can view the database schema in the `database_schema.pdf` file
+
+NB - You can navigate to localhost:5000/query to see the results of your query as you are constructing it.
 
 
 ## Python Task
