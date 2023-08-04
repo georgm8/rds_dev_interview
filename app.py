@@ -63,7 +63,7 @@ def get_inpatient_info(df):
             CURRENT_AGE: Patients current age
             GENDER: Patients gender
             SPELL_COUNT: The total number of inpatient spells the patients has had
-            AVERAGE_DURATION: The Average (mean) lenght of all their inpatient spells
+            AVERAGE_DURATION: The Average (mean) length of all their inpatient spells
     """    
     pass
 

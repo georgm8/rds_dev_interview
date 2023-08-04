@@ -13,14 +13,14 @@ You can use the following instructions to create a virtual environment and insta
 ```console
 python3 -m venv venv
 venv\Scripts\activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Linux
 ```console
 python3 -m venv venv
 source venv/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 The Flask app can then be run with the following command:
@@ -34,14 +34,13 @@ If you have problems running the app using the above command you can also try th
 ```console
 python app.py
 ```
-
-The app should be running at localhost:5000/patients
-
 # Exercises
+
+The app should be running at accessible via the url localhost:5000/patients. You will encounter an error when you first load this page, this is to be expected! Completion of the following exercises will enable the app to run correcly.
 
 ## 1. SQL Task
 
-Open `query.sql` and write a SQL script that brings in the following information about each patients' spell. Make sure to only include patients that are not deceased:
+Open the `query.sql` file and write a SQL script that brings in the following information about each patients' inpatient spell. Make sure to only include patients that are not deceased:
 
 - Patient ID
 - Patients Gender
@@ -51,18 +50,19 @@ Open `query.sql` and write a SQL script that brings in the following information
 - Diagnosis
 - Diagnosis Code
 
-You can view the database schema in the `database_schema.pdf` file
+The database is a SQLlite database contained within the `database.db` file in the projects root directory.
+You can view the database schema in the `database_schema.pdf` file.
 
 NB - You can navigate to localhost:5000/query to see the results of your query as you are constructing it.
 
 
 ## Python Task
 
-Open `app.py`. The `def patients()` function calls three other functions that are currently not implemented. Your task is to implement those functions:
+Open the `app.py` file. You will see that the `def patients()` function calls three other functions that are currently not implemented. Your task is to implement those functions:
 
-`def get_avg_age()`
-`def get_common_diagnosis()`
-`def get_inpatient_info()`
+- `def get_avg_age()`
+- `def get_common_diagnosis()`
+- `def get_inpatient_info()`
 
 ## Javascript Task
 
