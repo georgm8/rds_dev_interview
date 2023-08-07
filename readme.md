@@ -53,7 +53,7 @@ Open the `query.sql` file and write a SQL script that brings in the following in
 - Diagnosis Code
 
 The database is a SQLlite database contained within the `database.db` file in the projects root directory.
-You can view the database schema in the `database_schema.pdf` file.
+You can view the database schema in the `database_schema.pdf` file. Note that the data within the `database_schema.pdf` file is not the same as the data contained within the database.
 
 NB - You can navigate to localhost:5000/query to see the results of your query as you are constructing it.
 
