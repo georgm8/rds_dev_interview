@@ -1,8 +1,10 @@
 # General Instructions
 
-- Clone the repository
-- Complete the *three* exercises outlined in the 'Exercises' section below
-- Push your code to a new repository under your Github account - make sure to set the repository to Private
+- Clone, or preferably, fork this repository
+- Complete the **three** exercises outlined in the 'Exercises' section below
+- Push your code to a new repository under your Github account
+  - Make sure to set your repository to Private
+  - Add georgm8 as a Collaborator in your repository settings
 - When pushing to your own repository please do not include any virtual environment folders or files (feel free to use a .gitignore for this)
 
 # Enivronment Setup Instructions
