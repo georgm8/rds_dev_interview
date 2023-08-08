@@ -39,7 +39,7 @@ python app.py
 ```
 # Exercises
 
-The app should be running at accessible via the url localhost:5000/patients. You will encounter an error when you first load this page, this is to be expected! Completion of the following exercises will enable the app to run correcly.
+The app should be running at accessible via the url **localhost:5000/patients**. You will encounter an error when you first load this page, this is to be expected! Completion of the following exercises will enable the app to run correcly.
 
 ## 1. SQL Task
 
