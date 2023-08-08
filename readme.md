@@ -1,11 +1,12 @@
 # General Instructions
 
-- Clone, or preferably, fork this repository
+- Clone this repository
 - Complete the **three** exercises outlined in the 'Exercises' section below
 - Push your code to a new repository under your Github account
   - Make sure to set your repository to Private
   - Add georgm8 as a Collaborator in your repository settings
 - When pushing to your own repository please do not include any virtual environment folders or files (feel free to use a .gitignore for this)
+- Do not push to this repository under main or any other branch
 
 # Enivronment Setup Instructions
 
